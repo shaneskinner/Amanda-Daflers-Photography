@@ -1,0 +1,164 @@
+﻿/*
+	  Program:         CSS Stylesheet for: Amanda's Contact Page
+    File Name:       contact_styles.css
+	  Author:		       Shane Skinner
+	  Date Created:    03-05-2014
+	  Last Updated:    03-17-2014
+    Webpage URL:     www.adaflerphotography.com/contact.php
+    Program URL:     www.adaflerphotography.com
+*/
+
+/*********** Left Sidebar Styles **********/
+
+.page .leftSidebar {
+  clear: left;
+  float: left;
+  margin: 1px auto 1px auto;
+  width: 20%;
+}
+
+.page .leftSidebar #sidebarimage {
+  background-image: url('../images/images_sm/me.jpg');
+  height: 280px;
+  margin-left: 15%;
+  margin-top: 100px;
+  width: 210px;
+}
+
+/*********** Header and Navigation Menu Styles **********/
+
+.page .header heading {
+  margin-left: 15%;
+}
+
+.page .header heading h1 {
+  font-size: 2.25em;
+}
+
+
+/*********** Main Body Styles **********/
+
+.page .contactmain {
+  float: right;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.page .contactmain article, .page .contactmain article p {
+  color: white;
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
+  margin: 50px 20% 50px 10%;
+}
+
+.page .contactmain article {
+  text-indent: 15px;
+}
+
+.page .contactmain article:nth-of-type(1):first-letter, .page .contactmain article:nth-of-type(2):first-letter {
+  font-size: 150%;
+}
+
+#email {
+  text-align: center;
+}     
+
+/*********** Small Mobile Screen Styles **********/
+
+@media screen and (min-width: 100px) and (max-width: 500px) {
+  .page .leftSidebar {
+    display: none;
+  }
+
+  .page .contactmain {
+    float: left;
+    margin: 5px;
+    width: 100%;
+  }
+
+  .page .contactmain article, .page .contactmain article p {
+    font-size: 1.15em;
+    margin: 15px auto;
+    width: 95%;
+  }
+
+  .page .contactmain article #email {
+    font-size: 1.05em;
+    margin-top: 10px;
+    text-align: center;
+  }  
+}
+
+/*********** Medium Mobile Screen Styles **********/
+
+@media screen and (min-width: 501px) and (max-width: 979px) {
+    
+    .page {
+      width: 100%;
+    }
+
+    .page .leftSidebar {
+      float: left;
+      width: 25%;
+    }
+
+    .page .leftSidebar #sidebarimage {
+      background-size: cover;
+      height: 150px;
+      margin: 50px auto 0px auto;
+      width: 100px;
+    }
+
+    .page .contactmain {
+      float: right;
+      margin: 5px 0px;
+      width: 70%;
+    }
+
+    .page .contactmain article, .page .contactmain article p {
+      font-size: 1.15em;
+      margin: 15px auto;
+      width: 95%;
+    }
+
+    .page .contactmain article #email {
+      font-size: 1.05em;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .page nav {
+      clear: both;
+      margin-top: 20px;
+      width: 80%;
+    }
+
+    .page nav a {
+      position: inherit;
+      width: 20%;
+    }
+}
+
+/*********** Extra Large Screen Styles **********/
+
+@media screen and (min-width: 1401px) {
+  .page .leftSidebar {
+    width: 30%;
+  }
+
+  .page .contactmain {
+    width: 70%;
+  }
+
+  .page .leftSidebar #sidebarimage {
+    background-image: url('../images/images_lg/me.jpg');
+    height: 700px;
+    margin-left: 15%;
+    margin-top: 100px;
+    width: 525px;
+  }
+
+  .page .contactmain article, .page .contactmain article p {
+    font-size: 2em;
+  }
+}

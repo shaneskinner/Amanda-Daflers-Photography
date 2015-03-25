@@ -1,0 +1,254 @@
+/*
+    Program:	   CSS Stylesheet for: Amanda Dafler's Photography
+    File Name:     amandas_style_lg.css
+    Author:        Shane Skinner
+    Date Created:  12-07-2013
+    Last Updated:  03-06-2014
+    Webpage URL:   www.adaflerphotography.com
+    Program URL:   www.adaflerphotography.com
+*/
+
+/* PAGE BACKGROUND COLOR */
+
+body, section.page, section.heading, section.main {
+	background-color: black;
+	background-color: rgb(0, 0, 0);
+	color: green;
+	color: rgb(4, 180, 4);
+}
+
+/* BODY */
+
+body {
+	font-family: Georgia, 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	font-size: 12px;
+}
+
+section.main {
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.page .heading header {
+	float: left;
+	width: 70%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Arial Black', Verdana, sans-serif;
+}
+
+h1 {
+	font-size: 2em;
+	font-variant: small-caps;
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	color: green;
+	color: rgb(4, 180, 4);
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: green;
+	background-color: rgb(4, 180, 4);
+	-moz-border-radius: 20px;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+	color: yellow;
+	color: rgb(235, 235, 20);
+	font-size: 1.10em;
+}
+
+.clear {
+	clear: both;
+}
+
+/* NAV MENU */
+
+.page nav {
+	border: none;
+	position: absolute;
+	right: 50px;
+	text-align: right;
+	top: 15px;
+}
+
+.page nav a {
+	display: inline-block;
+	font-size: 1.30em;
+	list-style-type: none;
+	padding: 1px 10px 1px 10px;
+}
+
+/* FOOTER STYLES*/
+
+footer {
+	clear: both;
+	margin-top: 30px;
+}
+
+#webdev {
+	font-size: 1em;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+footer article {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+footer article:nth-of-type(1) {
+	font-size: 1.25em;
+	margin: 10px;
+}
+
+/* Small Mobile Screen Sizes */
+
+@media screen and (min-width: 100px) and (max-width: 500px) {
+
+   .page .heading {
+   	   margin: 0px;
+   	   padding: 1px;
+	   font-size: 1.2em;
+   }
+
+   .page .heading h1 {
+   	   font-size: 2em;
+   }
+
+   .page .main {
+ 	   margin: 20px 1px 20px 1px;
+	   padding: 1px;
+	   margin-left: auto;
+	   margin-right: auto;
+	   width: 98%;
+   }
+
+   .page .heading header {
+	   padding-bottom: 10px;
+	   text-align: center;
+	   width: 100%;
+   }
+
+   .page nav {
+	   position: inherit;
+   }
+
+   .page nav a {
+	   border-top: 1px solid rgb(4, 180, 4);
+	   clear: both;
+	   font-size: 1.5em;
+	   line-height: 40px;
+	   margin-left: auto;
+	   margin-right: auto;
+	   position: relative;
+	   text-align: center;
+	   width: 98%;
+   }
+
+   .page nav a:nth-of-type(3) {
+	   border-bottom: 1px solid rgb(4, 180, 4);
+   }
+
+   .page footer {
+	   margin: 10px;
+   }
+
+   .page footer article:nth-of-type(1) {
+	   font-size: 1em;
+   }
+
+   .page footer #webdev {
+	   font-size: .8em;
+   }
+}
+/* Medium Mobile Screen Sizes */
+
+@media screen and (min-width: 501px) and (max-width: 979px) {
+
+	.page .heading header {
+		font-size: 1.25em;
+		margin: 0px;
+	    padding: 1px;
+	    text-align: center;
+	    width: 100%;
+	}
+
+	.page .heading h1 {
+		font-size: 1.75em;
+	}
+
+   .page .main {
+   	   clear: both;
+	   margin-left: auto;
+	   margin-right: auto;
+	   padding-top: 5px;  
+	   width: 95%;
+   }
+
+   .page nav {
+   	   margin: 10px auto 10px auto;
+   	   position: inherit;
+   	   text-align: center;
+	   width: 80%;
+   }
+
+   .page nav a {
+	   border-left: 1px solid rgb(4, 180, 4);
+	   font-size: 1.4em;
+	   line-height: 35px;
+	   margin-left: auto;
+	   margin-right: auto;
+	   position: relative;
+	   text-align: center;
+	   width: 25%;
+   }
+
+   .page nav a:nth-of-type(3) {
+	   border-right: 1px solid rgb(4, 180, 4);
+	}
+
+	.page footer article:nth-of-type(1) {
+	   font-size: 1.10em;
+   }
+}
+
+/* Extra Large Screen Sizes */
+
+@media screen and (min-width: 1401px) {
+	.page .heading header {
+        font-size: 2em;
+     }
+
+     .page .main {
+     	margin-bottom: 50px;
+     	width: 85%;
+     }
+
+     .page nav a {
+     	font-size: 2em;
+     }
+
+     .page footer article:nth-of-type(1) {
+	   font-size: 1.75em;
+	   margin-bottom: 20px;
+   }
+
+   .page footer #webdev {
+       font-size: 1.50em;
+   }
+}
+
+
+
+
+

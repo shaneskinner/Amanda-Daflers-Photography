@@ -1,0 +1,186 @@
+/*
+	  Program:         CSS Stylesheet for: Amanda's Photo Gallery Pages
+          File Name:       photo_gallery_styles.css
+	  Author:	   Shane Skinner
+	  Date Created:    01-24-14
+	  Last Updated:    03-06-14
+          Webpage URL:     www.adaflerphotography.com/photogallery.php
+          Program URL:     www.adaflerphotography.com
+*/
+
+/* PHOTO GALLERY IMAGES */
+.flex-container > div {
+  margin: 5px;
+}
+
+.gallery {
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  width: 95%;
+}
+
+.page .gallery .flex-container .flex-item img {
+  border: none;
+}
+
+/* FLEXBOX CONTAINER STYLES */
+
+.flex-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -webkit-justify-content: flex-start;	/* space-between */
+  -ms-flex-pack: justify;
+  justify-content: flex-start;			/* space-between */
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.flex-item:nth-child(odd) {
+  -webkit-box-ordinal-group: 1;
+  -moz-box-ordinal-group: 1;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+.flex-item:nth-child(even) {
+  -webkit-box-ordinal-group: 1;
+  -moz-box-ordinal-group: 1;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+/*
+    Legacy Firefox implementation treats all flex containers
+    as inline-block elements.
+*/
+
+@-moz-document url-prefix() {
+.flex-container {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    }
+
+}
+
+/*
+  The above Firefox fix isn't working in FF 26. Found this polyfill online.
+  
+  Firefox doesn't yet support multiline Flexboxes so we have to fake it. 
+  Remove this once this bug is resolved. 
+  https://bugzilla.mozilla.org/show_bug.cgi?id=702508
+
+  **Update: This issue has bene resolved with Firefox 28. Keeping the below polyfill in case there are any future issues.**
+
+
+@supports not (flex-wrap: wrap) {
+  .flex-container {
+    display: block;
+    & > .gallery {
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+
+  .flex-container > div {
+    float: left;
+  }
+} 
+*/
+
+/* Small Mobile Screen Sizes */
+
+@media screen and (min-width: 150px) and (max-width: 568px) {
+
+  .page .gallery .flex-container {
+    width: 100%;
+  }
+
+  .page .gallery .flex-container .flex-item {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .page .gallery .flex-container .flex-item img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+  }
+
+  .page nav {
+    padding-bottom: 10px;
+    padding-top: 15px;
+  }
+}
+
+/* Medium Mobile Screen Sizes */
+
+@media screen and (min-device-width: 569px) and (max-device-width: 800px) {
+
+  .page .gallery .flex-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .page .gallery .flex-container .flex-item {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .page .gallery .flex-container .flex-item img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+  }
+
+}
