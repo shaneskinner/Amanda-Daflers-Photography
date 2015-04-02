@@ -31,6 +31,11 @@
       <meta name="ICBM" content="47.495658, -121.786777" />
 
       <meta name="application-name" content="A. Dafler Photos"/>
+      <meta name="msapplication-TileColor" content="#000000"/>
+      <meta name="msapplication-square70x70logo" content="windowsTile/tiny.jpg"/>
+      <meta name="msapplication-square150x150logo" content="windowsTile/square.jpg"/>
+      <meta name="msapplication-wide310x150logo" content="windowsTile/wide.jpg"/>
+      <meta name="msapplication-square310x310logo" content="windowsTile/large.jpg"/>
 
       <title>Amanda Dafler's Photo Gallery</title>
 
