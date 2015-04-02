@@ -6,7 +6,7 @@
          File Name:	   index.html
          Author:		   Shane Skinner
          Date Created:	12-07-13
-	      Last Revised:	07-15-14
+	      Last Revised:	04-02-2015
          Version:       1.0.1
          File Location:	C:\Users\Shane\Documents\Professional\My Web Sites\Amanda's Photography Website
       ========================================= -->
@@ -30,6 +30,7 @@
       <meta name="geo.position" content="47.495658;-121.786777" />
       <meta name="ICBM" content="47.495658, -121.786777" />
 
+      <meta name="application-name" content="A. Dafler Photos"/>
 
       <title>Amanda Dafler's Photo Gallery</title>
 
