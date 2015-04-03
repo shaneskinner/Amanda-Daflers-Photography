@@ -5,7 +5,7 @@
          Project:		   Amanda Dafler's Photography Site
          File Name:	   index.html
          Author:		   Shane Skinner
-         Date Created:	12-07-13
+         Date Created:	12-07-2013
 	      Last Revised:	04-02-2015
          Version:       1.0.1
          File Location:	C:\Users\Shane\Documents\Professional\My Web Sites\Amanda's Photography Website
@@ -14,6 +14,7 @@
 <!-- =============== Meta Data =============== -->
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="author" content="Shane Skinner" />
       <meta name="description" content="This is the photo gallery site for an amateur, aspiring photographer, Amanda Dafler. 
                                         Amanda lives in beautiful North Bend, Washington, and loves taking photos of nature, 
@@ -54,7 +55,6 @@
             $(".rslides").responsiveSlides();
          });
       </script>
-
    </head>
 
    <body>

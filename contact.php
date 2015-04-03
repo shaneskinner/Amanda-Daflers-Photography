@@ -6,7 +6,7 @@
          File Name:		      contact.php
          Author:		        Shane Skinner
          Date Created:		  01-23-2014
-	       Last Revised:		  03-10-2014
+	       Last Revised:		  04-03-2015
          File Location:		  C:\Users\Shane\Documents\Professional\My Web Sites\Amanda's Photography Website\Website Files
          Supporting Files:	amandas_styles.css
       ========================================= -->
@@ -14,6 +14,7 @@
 <!-- =============== Meta Data =============== -->
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="author" content="Shane Skinner" />
       <meta name="description" content="This is the photo gallery site for an amateur, aspiring photographer, Amanda Dafler. 
                                         Amanda lives in beautiful North Bend, Washington, (USA) and loves taking photos of nature, 

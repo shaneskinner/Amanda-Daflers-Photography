@@ -5,8 +5,8 @@
          Project:		       Amanda Dafler's Photography Site Nature Photo Gallery
          File Name:		     photogallery.php
          Author:		       Shane Skinner
-         Date Created:		 01-24-14
-	       Last Revised:		 07-15-14
+         Date Created:		 01-24-2014
+	       Last Revised:		 04-03-2015
          File Location:		 C:\Users\Shane\Documents\Professional\My Web Sites\Amanda's Photography Website
          Supporting Files: photo_gallery_styles.css, amandas_styles.css
       ========================================= -->
@@ -14,6 +14,7 @@
 <!-- =============== Meta Data =============== -->
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="author" content="Shane Skinner" />
       <meta name="description" content="This is the photo gallery site for an amateur, aspiring photographer, Amanda Dafler. 
                                         Amanda lives in beautiful North Bend, Washington, and loves taking photos of nature, 
